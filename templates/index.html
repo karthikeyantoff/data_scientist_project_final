@@ -1,0 +1,44 @@
+<!-- <!DOCTYPE html>
+<html>
+    <head>
+        <title>PURCHASED PREDICTION AI</title>
+    </head>
+    <body style="text-align: center;">
+        <h1>ENTER DATA HEARE</h1>
+        <form action="/predict" method="post">
+            <label>age:</label>
+            <input type="number" name="age" required><br><br>
+            <label>SALARY:</label>
+            <input type="number" name="salary" required><br><br>
+            <input type="submit" value="predict"><br><br>
+        </form>
+        {% if result %}
+        <h2>{{ result }}</h2>
+        {% endif %}
+    </body>
+</html> -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Purchase Prediction AI</title>
+</head>
+<body style="text-align:center;">
+
+    <h1>Purchase Prediction AI</h1>
+
+    <form action="/predict" method="post">
+        <label>Age:</label>
+        <input type="number" name="age" required><br><br>
+
+        <label>Salary:</label>
+        <input type="number" name="salary" required><br><br>
+
+        <input type="submit" value="Predict"><br><br>
+    </form>
+
+    {% if result %}
+        <h2>{{ result }}</h2>
+    {% endif %}
+
+</body>
+</html>
